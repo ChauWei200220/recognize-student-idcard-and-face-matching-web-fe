@@ -1,20 +1,21 @@
 <template>
-  <div id="app">
-    <Camera v-on:takePicture="this.takePicture"/>
-    <Picture/>
-  </div>
+  <v-app class="main">
+    <v-main>
+      <v-container>
+        <router-view></router-view>
+      </v-container>
+    </v-main>
+    <v-footer app class="footer">
+    </v-footer>
+  </v-app>
 </template>
 
 <script>
 
-import Camera from './components/Camera.vue'
-import Picture from './components/Picture.vue'
-
 export default {
   name: 'App',
   components: {
-    Camera,
-    Picture
+
   },
 
   methods: {
@@ -32,6 +33,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.bg {
+  display: flex !important;
+}
 </style>

@@ -1,7 +1,5 @@
 <template>
-    <div class="picture">
-        <canvas/>
-    </div>
+
 </template>
 
 <script>
@@ -13,9 +11,7 @@ export default {
 <style scoped>
 .picture {
     display: block;
-    width: 70px;
-    height: 70px;
-
-    box-shadow: 4px 4px 12px 0px transparent;
+    width: 40px;
+    height: 60px;
 }
 </style>
